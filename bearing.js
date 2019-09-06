@@ -4,10 +4,10 @@ function bearing (a, b) {
   var RAD = Math.PI / 180
   var DEG = 180 / Math.PI
 
-  var φ1 = a.latitude * RAD
-  var φ2 = b.latitude * RAD
-  var λ1 = a.longitude * RAD
-  var λ2 = b.longitude * RAD
+  var φ1 = a[0] * RAD
+  var φ2 = b[0] * RAD
+  var λ1 = a[1] * RAD
+  var λ2 = b[1] * RAD
   var Δλ = λ2 - λ1
 
   var y = Math.sin(Δλ) * Math.cos(φ2)

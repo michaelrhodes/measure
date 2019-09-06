@@ -4,10 +4,10 @@ function distance (a, b) {
   var R = 6378137
   var RAD = Math.PI / 180
 
-  var φ1 = a.latitude * RAD
-  var φ2 = b.latitude * RAD
-  var λ1 = a.longitude * RAD
-  var λ2 = b.longitude * RAD
+  var φ1 = a[0] * RAD
+  var φ2 = b[0] * RAD
+  var λ1 = a[1] * RAD
+  var λ2 = b[1] * RAD
   var Δφ = φ2 - φ1
   var Δλ = λ2 - λ1
 
